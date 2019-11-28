@@ -3,7 +3,7 @@ class Card(object):
     RANKS = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K']
     SUITS = ['♣', '♦', '♥', '♠']
 
-    def __init__(self, rank, suit, face_up = True):
+    def __init__(self, rank, suit, face_up=True):
         self.rank = rank
         self.suit = suit
         self.is_face_up = face_up
@@ -17,6 +17,7 @@ class Card(object):
 
     def flip(self):
         self.is_face_up = not self.is_face_up
+
 
 class Hand(object):
     """Ręka - wszystkie karty trzymane przez gracza."""
